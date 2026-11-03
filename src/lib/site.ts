@@ -11,12 +11,14 @@ export const site = {
   description:
     "KaamConnect connects customers with verified electricians, plumbers, masons, carpenters, painters, AC technicians and 18+ skilled trades across Pakistan. Search by city, check ratings, and contact workers directly on Call or WhatsApp. No middlemen, no commission.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kaamconnect.pk",
-  email: "support@kaamconnect.pk",
+  email: "kammconnect@gmail.com",
+  phone: "03272092344",
+  phoneFormatted: "0327 2092344",
   // Set these once the app is live on the stores
   playStoreUrl: process.env.NEXT_PUBLIC_PLAY_STORE_URL ?? "#download",
   appStoreUrl: process.env.NEXT_PUBLIC_APP_STORE_URL ?? "#download",
-  // Optional: WhatsApp support number in international format, e.g. "923001234567"
-  whatsapp: process.env.NEXT_PUBLIC_SUPPORT_WHATSAPP ?? "",
+  // WhatsApp support number in international format, e.g. "923272092344"
+  whatsapp: process.env.NEXT_PUBLIC_SUPPORT_WHATSAPP ?? "923272092344",
   country: "Pakistan",
   legalUpdated: "November 2, 2026",
 } as const;

@@ -16,6 +16,13 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex flex-col gap-2.5 text-sm text-slate-600">
               <a
+                href={`tel:${site.phone}`}
+                className="flex items-center gap-2 hover:text-brand-600 transition"
+              >
+                <Phone className="size-4 text-brand-600" />
+                {site.phoneFormatted}
+              </a>
+              <a
                 href={`mailto:${site.email}`}
                 className="flex items-center gap-2 hover:text-brand-600 transition"
               >

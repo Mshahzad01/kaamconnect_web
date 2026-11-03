@@ -30,12 +30,35 @@ export default function ContactPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {/* Email Card */}
+          {/* Phone / WhatsApp Card */}
           <div className="bg-white rounded-3xl p-6 border border-line shadow-sm hover:shadow-md transition">
             <div className="p-3 bg-brand-50 rounded-2xl w-fit text-brand-600 mb-4">
+              <Phone className="size-6" />
+            </div>
+            <h3 className="font-display font-bold text-ink text-lg">Call & WhatsApp</h3>
+            <p className="text-xs text-slate-500 mt-1 mb-4">Direct helpline and instant WhatsApp support</p>
+            <a
+              href={`tel:${site.phone}`}
+              className="text-brand-600 font-bold text-base hover:underline block"
+            >
+              {site.phoneFormatted}
+            </a>
+            <a
+              href={`https://wa.me/${site.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 text-xs text-emerald-600 font-semibold hover:underline inline-flex items-center gap-1"
+            >
+              Open in WhatsApp →
+            </a>
+          </div>
+
+          {/* Email Card */}
+          <div className="bg-white rounded-3xl p-6 border border-line shadow-sm hover:shadow-md transition">
+            <div className="p-3 bg-teal/10 rounded-2xl w-fit text-teal mb-4">
               <Mail className="size-6" />
             </div>
-            <h3 className="font-display font-bold text-ink text-lg">Official Email</h3>
+            <h3 className="font-display font-bold text-ink text-lg">Official Gmail</h3>
             <p className="text-xs text-slate-500 mt-1 mb-4">Direct email inquiries and verification issues</p>
             <a
               href={`mailto:${site.email}`}
@@ -45,27 +68,15 @@ export default function ContactPage() {
             </a>
           </div>
 
-          {/* Location Card */}
+          {/* Service Coverage Card */}
           <div className="bg-white rounded-3xl p-6 border border-line shadow-sm hover:shadow-md transition">
-            <div className="p-3 bg-teal/10 rounded-2xl w-fit text-teal mb-4">
+            <div className="p-3 bg-sky/10 rounded-2xl w-fit text-sky mb-4">
               <MapPin className="size-6" />
             </div>
             <h3 className="font-display font-bold text-ink text-lg">Service Coverage</h3>
             <p className="text-xs text-slate-500 mt-1 mb-4">Pan-Pakistan operational network</p>
             <p className="text-slate-700 font-medium text-sm">
               Lahore, Karachi, Islamabad, Rawalpindi, Multan, Faisalabad & all major cities
-            </p>
-          </div>
-
-          {/* Support Hours Card */}
-          <div className="bg-white rounded-3xl p-6 border border-line shadow-sm hover:shadow-md transition">
-            <div className="p-3 bg-sky/10 rounded-2xl w-fit text-sky mb-4">
-              <Clock className="size-6" />
-            </div>
-            <h3 className="font-display font-bold text-ink text-lg">Response Time</h3>
-            <p className="text-xs text-slate-500 mt-1 mb-4">Support team availability</p>
-            <p className="text-slate-700 font-medium text-sm">
-              Monday – Saturday: 9:00 AM – 7:00 PM (PKT)
             </p>
           </div>
         </div>
