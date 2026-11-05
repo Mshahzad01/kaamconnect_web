@@ -34,7 +34,9 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   keywords: [
+    "KaamConnect PAK",
     "KaamConnect",
+    "کام کنیکٹ پاک",
     "کام کنیکٹ",
     "skilled workers Pakistan",
     "electrician near me",

@@ -18,7 +18,7 @@ export function LogoMark({ size = 38, className = "" }: { size?: number; classNa
   return (
     <Image
       src="/images/brand/logo.png"
-      alt="KaamConnect logo"
+      alt="KaamConnect PAK logo"
       width={size}
       height={size}
       className={`object-contain ${className}`}
@@ -32,7 +32,7 @@ export default function Logo({ className = "", tone = "dark", size = "md" }: Log
   return (
     <Link
       href="/"
-      aria-label="KaamConnect home"
+      aria-label="KaamConnect PAK home"
       className={`group inline-flex items-center gap-2.5 ${className}`}
     >
       {tone === "light" ? (
@@ -42,9 +42,14 @@ export default function Logo({ className = "", tone = "dark", size = "md" }: Log
       ) : (
         <LogoMark size={s.box} className="transition-transform duration-300 group-hover:-rotate-6" />
       )}
-      <span className={`font-display font-extrabold tracking-tight ${s.text}`}>
-        <span className={tone === "light" ? "text-white" : "text-brand-800"}>Kaam</span>
-        <span className={tone === "light" ? "text-brand-300" : "text-brand-500"}>Connect</span>
+      <span className={`font-display font-extrabold tracking-tight ${s.text} flex items-center gap-1`}>
+        <span>
+          <span className={tone === "light" ? "text-white" : "text-brand-800"}>Kaam</span>
+          <span className={tone === "light" ? "text-brand-300" : "text-brand-500"}>Connect</span>
+        </span>
+        <span className="text-[0.62em] font-extrabold px-1.5 py-0.5 rounded-md bg-brand-600 text-white tracking-wider self-center uppercase shadow-xs">
+          PAK
+        </span>
       </span>
     </Link>
   );

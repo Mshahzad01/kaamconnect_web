@@ -4,12 +4,12 @@
  * (landing page, footer, contact page, legal pages, metadata).
  */
 export const site = {
-  name: "KaamConnect",
-  nameUrdu: "کام کنیکٹ",
+  name: "KaamConnect PAK",
+  nameUrdu: "کام کنیکٹ پاک",
   tagline: "Pakistan's Skilled Worker Marketplace",
   taglineUrdu: "ہنر مند، بااعتماد اور باوقار روزگار",
   description:
-    "KaamConnect connects customers with verified electricians, plumbers, masons, carpenters, painters, AC technicians and 18+ skilled trades across Pakistan. Search by city, check ratings, and contact workers directly on Call or WhatsApp. No middlemen, no commission.",
+    "KaamConnect PAK connects customers with verified electricians, plumbers, masons, carpenters, painters, AC technicians and 18+ skilled trades across Pakistan. Search by city, check ratings, and contact workers directly on Call or WhatsApp. No middlemen, no commission.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kaamconnect.pk",
   email: "kammconnect@gmail.com",
   phone: "03272092344",

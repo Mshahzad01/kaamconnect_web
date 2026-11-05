@@ -22,7 +22,7 @@ export default function ContactPage() {
             Always Here To Help
           </span>
           <h1 className="text-3xl sm:text-4xl font-display font-extrabold text-ink tracking-tight">
-            Contact KaamConnect Support
+            Contact KaamConnect PAK Support
           </h1>
           <p className="mt-3 text-slate-600 font-urdu text-lg">
             ہم سے رابطہ کریں — آپ کے سوالات، تجاویز یا مدد کے لیے ہم حاضر ہیں
@@ -94,7 +94,7 @@ export default function ContactPage() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                alert("Thank you! Your message has been sent to the KaamConnect support team.");
+                alert("Thank you! Your message has been sent to the KaamConnect PAK support team.");
               }}
               className="space-y-5"
             >

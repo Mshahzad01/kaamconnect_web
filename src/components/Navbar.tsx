@@ -93,7 +93,7 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-5 py-3.5 font-semibold text-white"
             >
               <Download className="size-5" />
-              Download KaamConnect
+              Download KaamConnect PAK
             </Link>
           </li>
         </ul>
