@@ -1,0 +1,15 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect /page.html to /page/ or /page
+# Handle trailing slash and clean URLs for static export
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Directory indexing off (prevents 403 Forbidden on folders without index.html)
+Options -Indexes
+
+# Error 404 page
+ErrorDocument 404 /404.html
